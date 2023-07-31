@@ -2667,7 +2667,7 @@ int GuiValueBox(Rectangle bounds, const char *text, int *value, int minValue, in
     GuiState state = guiState;
 
     char textValue[RAYGUI_VALUEBOX_MAX_CHARS + 1] = "\0";
-    sprintf(textValue, "%i", *value);
+    sprintf(textValue, "%f", *value);
 
     Rectangle textBounds = { 0 };
     if (text != NULL)
@@ -2775,7 +2775,7 @@ int GuiValueBoxF(Rectangle bounds, const char *text, float *value, float minValu
     GuiState state = guiState;
 
     char textValue[RAYGUI_VALUEBOX_MAX_CHARS + 1] = "\0";
-    sprintf(textValue, "%i", *value);
+    sprintf(textValue, "%.1f", *value);
 
     Rectangle textBounds = { 0 };
     if (text != NULL)
